@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      COUPON ALL IN ONE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">COUPON ALL IN ONE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div id="couponTitle">쿠키런:킹덤</div>
+    <div>사용 가능 쿠폰</div>
+    <div id="couponList" [innerHtml]="couponList"></div>
+    <input id="couponInput" type="text" placeholder="email" (change)="email = $event.target.value"/>
+    <br>
+    <ion-button id="couponSubmit" fill="clear" (click)="submit()">click</ion-button>
+    <br>
+    <div id="couponLog" [innerHtml]="couponLog"></div>
+  </div>
+
+</ion-content>

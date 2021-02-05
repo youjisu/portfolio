@@ -1,0 +1,46 @@
+#container {
+  position: relative;
+  text-align: center;
+
+  #couponList{
+    width: 300px;
+    text-align: left;
+    margin: auto;
+    display: none;
+  }
+  #couponInput {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #999;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+
+    &:focus {
+      background: #eee;
+    }
+  }
+
+  #couponSubmit {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #3880ff;
+  }
+
+  #couponLog {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  #loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
