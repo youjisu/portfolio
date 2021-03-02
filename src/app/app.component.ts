@@ -17,6 +17,6 @@ export class AppComponent {
   }
 
   initializeApp() {
-    firebase.default.initializeApp(FIREBASE_CONFIG);
+    firebase.default.initializeApp(FIREBASE_CONFIG); 
   }
 }
