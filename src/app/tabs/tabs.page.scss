@@ -1,1 +1,42 @@
+.current {
+  color: #49e;
+}
 
+.leftSide {
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  width: 360px;
+  --background: #f2f3f5;
+
+  ion-title {
+    padding: 10px 5px;
+
+    ion-item {
+      --background: rgba(0, 0, 0, 0);
+      --border-style: 0;
+
+      ion-icon {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.topSide {
+  box-shadow: 0 0 20px #999;
+  opacity: 0.88;
+}
+
+@media (max-width: 1400px) {
+  .leftSide {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leftSide {
+    display: none;
+  }
+}

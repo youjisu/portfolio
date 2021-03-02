@@ -1,17 +1,147 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id="container">
+    <ion-card class="feedBox">
+      <ion-card-header>
+        <div class="backMyImage">
+          <div class="coverImage"></div>
+          <div class="myImage"></div>
+        </div>
+        <div class="myNameBox">
+          유지수
+          <small>Server · Client</small>
+          <small>Developer</small>
+        </div>
+        <ion-card-content>
+          <div class="contentTitle">Summary</div>
+        </ion-card-content>
+        <div class="lifeBox">
+          "취미가 프로그래밍인데"<br>
+          "프로그래밍이 일이 되어버리니까"<br>
+          "일도 취미가 되는건가요" 
+          <small>- 3단 논법?!.</small>
+        </div>
+        <!--
+        <ion-card-content>
+          <div class="contentTitle">Summary</div>
+        </ion-card-content>
+        <div class="lifeBox">
+          "저 게임 안했어요"
+          <small>- 1997. 인생 처음 거짓말.</small>
+        </div>
+        <div class="lifeBox">
+          "쭈굴쭈굴-"
+          <small>- 2006. 사춘기.</small>
+        </div>
+        <div class="lifeBox">
+          "소심했던 과거의 나 안녕"
+          <small>- 2009. 대학 OT 미스공대 선발, 2위.</small>
+        </div>
+        <div class="lifeBox">
+          "쭈굴쭈굴-"
+          <small>- 2011. 입대.</small>
+        </div>
+        <div class="lifeBox">
+          "이젠 좀 듬-직(쭈굴-)"
+          <small>- 2013. 복학생.</small>
+        </div>
+        <div class="lifeBox">
+          "이것이 사회의 쓴맛인가-"
+          <small>- 2014. 첫 직장, 스타트업.</small>
+        </div>
+        <div class="lifeBox">
+          "쓴맛이 사회의 이것인가-"
+          <small>- 2016. 두번째 직장, 스타트업.</small>
+        </div>
+        <div class="lifeBox">
+          "아아아 으히흐헿 이힣히힣"
+          <small>- 2021-ing. 첫 백수.</small>
+        </div>
+        -->
+      </ion-card-header>
+    </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card class="feedBox">
+      <ion-card-content>
+        <div class="contentTitle">Q&A</div>
+        <div class="qnaBox">
+          <p><span>- 간단한 소개를 해주세요.</span>
+            개발을 한다기 보단 작품을 한다고 생각해요. 퍼즐 조각 하나하나 맞춰나가다 보면 어느새 완성이 되어진 한 작품을 보며 기쁨을 느껴요. 하지만 여럿이 함께 한조각 두조각 맞추는 순간의 과정도 저에겐 소중합니다. 저는 그런 개발자에요.
+          </p>
+          <p><span>- 언제부터 지금의 직무에 관심을 갖게 되었나요?</span>
+            중학생때 해킹에 매료되어 프로그래밍을 시작하게 되었어요. 누군가가 만들어놓은 결과물을 분해하고 재조립하며 나만의 첨가물을 넣기도 해보고 그렇게 새로운 작품이 탄생하게 되면 느껴지는 희열이 대단했어요. 하지만 아이러니하게도 이제는 제가 만든 결과물을 다른 누군가의 접근으로부터 막기 위해 생각과 고민을 하게 되었네요. 어릴적 경험은 매우 도움이 되었어요.
+          </p>
+          <p><span>- 어떤 회사를 찾고 있나요?</span>
+            다른건 몰라도 목표가 뚜렷한 회사를 찾아요. 비록 여러 갈래로 나뉘어지고 다른 우물을 팔 수도 있겠지만, 하나의 목표를 위해 끊임없이 소통하고 서로의 가치를 증명해낼 수 있는 곳이라면 더할나위 없습니다. 즐겁게 일했으면 좋겠어요.
+          </p>
+          <p><span>- 경력에서 가장 자랑스럽게 생각하는 것은 무엇인가요?</span>
+            창업 초기 멤버로 CTO란 자리를 맡아보았어요. 직책의 책임이 부담이 되기도 했지만 회사의 기술개발 대표로서 자부심을 가지고 일할 수 있어서 좋았어요. 제가 좀 더 성숙해진 계기이기도 해요.
+          </p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <ion-card-content>
+        <div class="contentTitle">Skills</div>
+        <div class="skillsBox">
+          <p><span>Server</span><br>
+            JAVA
+            SPRING
+            MYSQL
+            FIREBASE
+            NCLOUD
+          </p>
+          <p><span>Client</span><br>
+            C++
+            C#
+            VB.NET
+            JSP
+            HTML/CSS/SCRIPT
+            ANDROID
+            IONIC
+          </p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <ion-card-content>
+        <div class="contentTitle">Education · Career</div>
+        <div class="educationBox">
+          <div class="educationLine">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <p><span>2003-2005</span>이대부속중학교</p>
+          <p><span>2006-2008</span>한성고등학교</p>
+          <p><span>2011-2013</span>공군 수원비행단</p>
+          <p><span></span><small>정보통신 · 유선특기</small></p>
+          <p><span>2014-2015</span><a target="blank" href="http://www.afidev.com">(주) AFI</a></p>
+          <p><span></span><small>개발팀 · 웹프로그래머</small></p>
+          <p><span>2009-2015</span>단국대학교</p>
+          <p><span></span><small>컴퓨터학부 · 소프트웨어학과</small></p>
+          <p><span>2015-2020</span><a target="blank" href="http://www.fitt.kr">(주) FITT</a></p>
+          <p><span></span><small>연구개발부 · CTO</small></p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <ion-card-content>
+        <div class="contentTitle">Contact</div>
+        <div class="contactBox">
+          <p><span>Phone</span><br><a href="tel:010-2883-8533">010-2883-8533</a></p>
+          <p><span>Email</span><br>ujs8533@naver.com</p>
+          <p><span>Site</span><br><a target="blank" href="https://jisu-world.web.app">https://jisu-world.web.app</a></p>
+          <p><span>Instagram</span><br><a target="blank" href="https://www.instagram.com/babojisu">https://www.instagram.com/babojisu</a></p>
+          <p><span>Address</span><br>Seodaemun-gu, Seoul</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
+

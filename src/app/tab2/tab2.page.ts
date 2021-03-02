@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  public imgSrc;
+
   constructor() {}
 
+  imgClick(src){
+    this.imgSrc = src;    
+  }
+  imgExit(){
+    this.imgSrc = null;
+  }
 }

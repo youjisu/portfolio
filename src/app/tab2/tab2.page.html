@@ -1,17 +1,335 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id="container">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2018.03."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #8 FITT Treadmill<br><br>
+
+          언어 - JAVA-ANDROID STUDIO·SPRING, MSSQL<br>
+          기능 - 운동검사<br><br>
+
+          FITT 서비스의 확장 서비스인 운동검사 기능을 가진 트레드밀.<br>
+          트레드밀은 DRAX사에서 제공받았고 내부에 안드로이드 기반 운동검사 어플리케이션을 개발했다.<br>
+          트레드밀과 어플리케이션간 UDP로 데이터를 주고받으며 운동검사에 필요한 정보만 가공하여 실제 FITT 서버와 연동하였다.<br>
+          DRAX사 트레드밀이 계속해서 업데이트되는 시점이었기 때문에 안드로이드 버전 문제부터 통신간 프로토콜 불일치 등등으로 애를 먹은 프로젝트.
+          다른 회사와 협업을 통해 개발한 첫 어플리케이션으로 기억에 남는다.
+          무엇보다도 개발하면서 하루 수키로를 땀흘리며 뛰었는데, 개발하면서 건강도 챙길 수 있는 매우 바람직한 프로젝트였다.<br><br>
+
+          관련 게시물: <a target="blank" href="https://fitt.kr/notice/noticeDetail.fitt?p=71">https://fitt.kr/notice/noticeDetail.fitt?p=71</a>
+        </div>
+        <div class="cardMedia">
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/treadmill2.jpg')"
+            style="background-image: url(../../assets/img/treadmill2.jpg);"></div>
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/treadmill3.jpg')"
+            style="background-image: url(../../assets/img/treadmill3.jpg);"></div>
+          <ion-slides pager="true">
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/treadmill2.jpg')"
+                style="background-image: url(../../assets/img/treadmill2.jpg;"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/treadmill3.jpg')"
+                style="background-image: url(../../assets/img/treadmill3.jpg);"></div>
+            </ion-slide>
+          </ion-slides>
+        </div>
+        <div class="cardMedia">
+          <iframe src="https://www.youtube.com/embed/wseaUM2XnxA" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <p>#8 FITT Treadmill</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2017.04."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #7 MES 측정평가 온라인시험<br><br>
+
+          언어 - JAVA-SPRING, MSSQL<br>
+          기능 - 운동처방사에게 필요한 기초 대사공식을 활용한 측정평가 온라인 시험.<br><br>
+
+          FITT 서비스의 확장 서비스인 MES 온라인 시험.<br>
+          운동처방사를 대상으로 측정평가에 대한 온라인 시험을 실시간으로 실시한다.<br>
+          개발할 때 중점적으로 1) 출제되는 문제 2) 실시간 온라인 처리 부분을 많이 생각했던것 같다.
+          시험을 치루는 사람들마다 다른 문제들이 출제되게끔 만드는 것이 목표였고 문제별로 문제은행 방식으로 처리했다.<br>
+          실시간 처리가 고민이었는데 이전에 사용했던 소켓을 사용해볼까 하다가 Firebase에서 제공하는 Realtime Database가 생각나 토대로 설계해보았다.
+          하지만 문뜩 온라인 시험이 꼭 실시간으로 양방향 통신이 이루어져야 하는 것은 아니라는걸 깨닫고 API만으로 단번에 처리했다.<br>
+          한 달간 제주도에서 디지털노마드를 경험하며 기획 및 개발까지 완료한 프로젝트. 
+          그 당시 제주도에서의 경험이 너무나도 좋아서 기회가 있으면 다시 다녀오고싶다.<br><br>          
+
+          사이트: <a target="blank" href="http://mes.fitt.kr">http://mes.fitt.kr</a>
+        </div>
+        <div class="cardMedia">
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/mes1.png')"
+            style="background-image: url(../../assets/img/mes1.png);"></div>
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/mes2.png')"
+            style="background-image: url(../../assets/img/mes2.png);"></div>
+          <ion-slides pager="true">
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/mes1.png')"
+                style="background-image: url(../../assets/img/mes1.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/me2s.png')"
+                style="background-image: url(../../assets/img/mes2.png);"></div>
+            </ion-slide>
+          </ion-slides>
+          <p>#7 MES</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2016.02."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #6 FITT<br><br>
+
+          언어 - JAVA-SPRING, MSSQL<br>
+          기능 - 운동과학 데이터를 기반으로 한 맞춤형 (헬스케어) 솔루션, 소프트웨어 서비스를 제공하는 통합 헬스케어 데이터 플랫폼.<br><br>
+          
+          헬스케어 서비스 플랫폼을 목표로 개발하게된 대규모 프로젝트.<br>
+          처음 프로젝트를 설계할 당시에 느꼈던 생각으로는 '구글 네이버 페이스북 카카오톡이 전부 들어가네?' 였다.
+          대표님의 포부를 새삼 느꼈는데 여러가지 현실의 벽과 타협하며 5년간의 성장을 일구었다.<br>
+          막막했던 상상속의 아이템이 구현이 되면서 느끼는 희열이 아직도 나를 개발자로 남게끔 하는 원동력인 듯 하다.<br>
+          B2B모델 플랫폼으로 가맹점관리, 회원관리, CRM, 회원운동검사, 스케줄러 등 엄청난 노력의 결과물들이 삽입되어있다.
+          가맹점들에게서 수십 수백만 데이터들이 생산되었고, 해당 데이터를 분석하고 재가공하여 만들어지는 2차, 3차 서비스들이
+          신선하고 반응도 좋아 '개발하는 맛'이 있던 프로젝트이다.
+          해당 서비스는 현재 웹에서만 서비스하고 있지만 곧 모바일에서 함께 연동되어 서비스할 예정이다.<br>
+          업그레이드 개발 도중에 퇴사를 하게 되었지만 헬스케어 시장의 독보적인 서비스가 될 것이라고 확신한다.<br><br>
+
+          사이트: <a target="blank" href="https://www.fitt.kr">https://www.fitt.kr</a>
+        </div>
+        <div class="cardMedia">
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/fitt1.png')"
+            style="background-image: url(../../assets/img/fitt1.png);"></div>
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/fitt2.png')"
+            style="background-image: url(../../assets/img/fitt2.png);"></div>
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/fitt3.png')"
+            style="background-image: url(../../assets/img/fitt3.png);"></div>
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/fitt4.png')"
+            style="background-image: url(../../assets/img/fitt4.png);"></div>
+          <ion-slides pager="true">
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/fitt1.png')"
+                style="background-image: url(../../assets/img/fitt1.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/fitt2.png')"
+                style="background-image: url(../../assets/img/fitt2.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/fitt3.png')"
+                style="background-image: url(../../assets/img/fitt3.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/fitt4.png')"
+                style="background-image: url(../../assets/img/fitt4.png);"></div>
+            </ion-slide>
+          </ion-slides>
+          <p>#6 FITT</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2015.02."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #5 쏘캣<br><br>
+
+          언어 - JAVA-ANDROID STUDIO·SPRING, MSSQL<br>
+          기능 - 실시간으로 유저들간 질문/답변 앱 어플리케이션<br>
+          주요 기법 - WebSocket-Vert.x<br><br>
+
+          기본적인 컨셉은 선택을 잘 하지 못하는 사용자를 대상으로 다른 누군가에게 질문을 던져 답변을 받는 방식.<br>
+          커뮤니티의 색깔이 강했지만 질문-답변의 단순명료한 그 틀을 벗어나지 않았다.<br>
+          서비스가 User By User이기 때문에 컨텐츠를 생산할 필요도 없었고, 방치하면 방치할 수록 그들만의 세상이 만들어지는 참 이상적인 서비스였다.<br>
+          약간의 문제가 있었다면 이미지도 함께 업로드할 수 있었기 때문에 음란한 게시물들이 종종 보였고,
+          신고 기능으로 어느정도 커버했지만 관리의 필요성을 느껴 실시간으로 모니터링을 한 정도.<br>
+          해당 앱도 소켓 통신으로 실시간 서비스가 가능하게끔 설계한 부분이 기억에 남는다. 참 많은 것들을 할 수 있겠구나 싶어서 만든 것중 하나.
+        </div>
+        <div class="cardMedia">
+          <div class="cardImage cnt-3 web" (click)="imgClick('../../assets/img/ssocat1.png')"
+            style="background-image: url(../../assets/img/ssocat1.png);"></div>
+          <div class="cardImage cnt-3 web" (click)="imgClick('../../assets/img/ssocat2.png')"
+            style="background-image: url(../../assets/img/ssocat2.png);"></div>
+          <div class="cardImage cnt-3 web" (click)="imgClick('../../assets/img/ssocat3.png')"
+            style="background-image: url(../../assets/img/ssocat3.png);"></div>
+          <ion-slides pager="true">
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/ssocat1.png')"
+                style="background-image: url(../../assets/img/ssocat1.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/ssocat2.png')"
+                style="background-image: url(../../assets/img/ssocat2.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/ssocat3.png')"
+                style="background-image: url(../../assets/img/ssocat3.png);"></div>
+            </ion-slide>
+          </ion-slides>
+          <p>#5 쏘캣</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2014.10."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #4 퍼플데이트<br><br>
+
+          언어 - JAVA-ANDROID STUDIO·SPRING, MSSQL<br>
+          기능 - 네이버 블로그의 모든 데이트 코스를 수집하여 하나의 어플로 검색 추천 및 데이트코스 설계<br>
+          참고 - Naver Blog·Cafe, DATE POP<br>
+          주요 기법 - 웹 크롤링<br><br>
+
+          한창 네이버 블로그가 유행하고 데이트코스를 검색해가며 짜는 커플들을 위해서 기획된 가장 씁쓸한 기억의 프로젝트.
+          이를 위해서는 무엇보다도 블로그의 사진 및 정보들을 긁어올 수 있는 웹 크롤링 기술이 절실했다.
+          정보들을 긁어모으는 와중에 생긴 문제점 및 해결방안 등등 웹 크롤링에 대해서 많은 경험을 하게 되었다.<br>
+          한달여간의 크롤링 끝에 데이터베이스를 구축하였고 서비스에 사용할 수 있도록 정보 제공자에게 메일을 돌려 사용 동의를 얻었다.<br>
+          이 부분에서 문제가 생겼다. 정보 제공 동의가 정보 불법 사용으로 와전된 것이다.<br>
+          한달여간 문제를 수습하기 위해 밤낮 가리지 않고 노력했지만 100만 블로거들의 노여움을 산 해당 프로젝트는 이후 프로젝트 자체가 폐기되었다.<br>
+          기술적인 면에서 많은것을 배웠으며 스펙업을 했다고 생각은 하지만, 빛을 보지 못하고 폐기되어버린 '퍼플데이트' 프로젝트는 늘 가슴아픈 추억이다.<br><br>
+
+          관련 기사: <a target="blank"
+            href="https://news.joins.com/article/15981972">https://news.joins.com/article/15981972</a>
+        </div>
+        <div class="cardMedia">
+          <div class="cardImage" (click)="imgClick('../../assets/img/purple.png')"
+            style="background-image: url(../../assets/img/purple.png);"></div>
+          <p>#4 퍼플데이트</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2014.01."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #3 꿀단지 (꿀같은 단국대 지역정보)<br><br>
+
+          언어 - JAVA-SPRING, MSSQL<br>
+          기능 - 단국대 주변 정보들을 소개, 연결 및 쿠폰 발급. 단국대 커뮤니티 관리 및 실시간 채팅 구현<br>
+          참고 - DC inside, Naver Blog·Cafe<br>
+          주요 기법 - WebSocket-Vert.x<br><br>
+
+          대학교 선배 한 명, 동기 두 명과 함께 기획부터 영업까지 A to Z로 개발한 프로젝트.
+          개발만 생각하고 고민하던 와중에 영업이란 걸 처음으로 해보고서 느낀 점이 참 많았다.
+          어리숙한 틀을 벗어야만 매장도, 소비자도 만족시킬 수 있다는 것을 새삼 깨달았다.<br>
+          B2B2C 프로젝트를 진행해보았다는 것에서 매우 큰 경험이라고 생각한다.<br>
+          SPRING FRAMEWORK를 처음 써본 프로젝트. 커뮤니티 서비스 개발은 개발자로의 역량 향상에 도움이 정말 많았다.
+          특히 Vert.x-웹 소켓이 나에게 매우 흥미롭게 다가왔는데, 채팅 뿐만이 아니라 시도해볼 만한 아이템들이 정말 많아서
+          하루하루 행복한 상상에 빠져 살았던 것 같다.<br>
+          현재는 관리 소홀로 서비스 종료되어 아쉬운 프로젝트.<br><br>
+
+          페이스북: <a target="blank" href="https://www.facebook.com/gguldanji">https://www.facebook.com/gguldanji</a>
+        </div>
+        <div class="cardMedia">
+          <div class="cardImage cnt-3 web" (click)="imgClick('../../assets/img/dankook1.png')"
+            style="background-image: url(../../assets/img/dankook1.png);"></div>
+          <div class="cardImage cnt-3 web" (click)="imgClick('../../assets/img/dankook3.png')"
+            style="background-image: url(../../assets/img/dankook3.png);"></div>
+          <div class="cardImage cnt-3 web" (click)="imgClick('../../assets/img/dankook4.png')"
+            style="background-image: url(../../assets/img/dankook4.png);"></div>
+          <ion-slides pager="true">
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/dankook1.png')"
+                style="background-image: url(../../assets/img/dankook1.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/dankook2.png')"
+                style="background-image: url(../../assets/img/dankook2.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/dankook3.png')"
+                style="background-image: url(../../assets/img/dankook3.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/dankook4.png')"
+                style="background-image: url(../../assets/img/dankook4.png);"></div>
+            </ion-slide>
+          </ion-slides>
+          <p>#3 꿀단지</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2013.05."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #2 WHT (Web Hacking Tool)<br><br>
+
+          언어 - VB6.0<br>
+          기능 - 목표 웹 사이트 인코딩·디코딩/HTML·스크립트·쿠키 변조/패킷 스니핑/GET·POST 전송<br>
+          참고 - IE, Chrome, Firefox<br>
+          주요 기법 - Winhttp, WebClient, WinSock<br><br>
+
+          웹해킹 공부중 다른 해킹툴을 사용는데 불편함을 느껴 가볍게 기획해서 진행한 프로젝트.<br>
+          WebHacking.kr 문제들을 푸는데 최적화 되어있다.<br>
+          여러 언어로 만들어진 웹 어플리케이션의 취약점과 구동 방식 등 여러가지를 깨닫게 해주었다.<br>
+          여러가지 해킹 보안 기능이 탑재된 Internet Explorer.
+        </div>
+        <div class="cardMedia">
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/wht.png')"
+            style="background-image: url(../../assets/img/wht.png);"></div>
+          <div class="cardImage cnt-2 web" (click)="imgClick('../../assets/img/wht2.png')"
+            style="background-image: url(../../assets/img/wht2.png);"></div>
+          <ion-slides pager="true">
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/wht.png')"
+                style="background-image: url(../../assets/img/wht.png);"></div>
+            </ion-slide>
+            <ion-slide>
+              <div class="cardImage" (click)="imgClick('../../assets/img/wht2.png')"
+                style="background-image: url(../../assets/img/wht2.png);"></div>
+            </ion-slide>
+          </ion-slides>
+          <p>#2 WHT GUI</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="feedBox">
+      <feed-header name="유지수" date="2009.11. - 2013.03."></feed-header>
+      <ion-card-content>
+        <div class="cardContent">
+          #1 BadEditor Project<br><br>
+
+          언어 - C++, VB6.0<br>
+          기능 - 프로그램의 메모리 상태 모니터링, 검색 및 변조, 물리적 포인터 검색<br>
+          참고 - CheatEngine<br>
+          주요 기법 - DLL Injection, OpenProcess, Read/WriteProcessMemory, SendMessage, FindWindow<br><br>
+
+          목표 프로세스에 DLL을 주입하여 해당 DLL과 VB로 제작된 GUI를 연결하여 목표 프로세스의 메모리를 제어할 수 있게 제작되었다.<br>
+          해당 기법은 윈도우10 으로 넘어오면서 보안상 취약한 부분으로 감지되기 때문에 따로 처리하지 않으면 지금은 사용하지 못한다.
+          무엇보다 군대 전후로 조금씩 느긋하게 만들었기 때문에 기억에 가장 많이 남는 프로젝트.<br>
+          지금 코드를 들춰보면 정말 노가다도 많고 루틴도 어색하고 플로우는 꼬여있고.. 손 보고싶은 곳이 한두군데가 아니지만, 처음으로 시도했던 거대한(나름-) 프로젝트이기 때문에 애정이 간다.<br>
+        </div>
+        <div class="cardMedia">
+          <iframe src="https://www.youtube.com/embed/5s6xMmAzpw8" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <!--iframe src='//im6.ezgif.com/tmp/ezgif-6-1bbfc9f0960f.mp4' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='' HEIGHT='' allow='' allowfullscreen></iframe-->
+          <p>#1 BadEditor 시연 영상</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
 </ion-content>
+
+<div class="popImage" *ngIf="imgSrc" (click)="imgExit()">
+  <div class="overlay"></div>
+  <div class="img-show">
+    <img src="{{imgSrc}}">
+  </div>
+</div>
